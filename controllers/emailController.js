@@ -56,9 +56,9 @@ mailRouter.post("/", async (req, res) => {
         console.log("Email sent: " + info.response);
       }
     });
-   setTimeout(()=>{ console.log(req.body);},3000)
+   
     res.status(200).json({
-      message: "Mail sent successfully",
+      message: "Message sent successfully",
       success: true,
     });
   } catch (error) {
